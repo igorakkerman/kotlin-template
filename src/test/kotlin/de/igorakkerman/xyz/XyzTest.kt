@@ -1,12 +1,12 @@
-package de.igorakkerman.kata.xyz
+package de.igorakkerman.xyz
 
 import assertk.assertThat
 import assertk.assertions.isEqualTo
 import org.junit.jupiter.api.Test
 
-internal class XyzKataTest {
+internal class XyzTest {
 
-    val kata = XyzKata()
+    val kata = Xyz()
 
     @Test
     internal fun empty() {

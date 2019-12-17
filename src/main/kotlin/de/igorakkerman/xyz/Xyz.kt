@@ -1,6 +1,6 @@
-package de.igorakkerman.kata.xyz
+package de.igorakkerman.xyz
 
-class XyzKata {
+class Xyz {
 
     fun solution(A: IntArray): Int {
         return 0
