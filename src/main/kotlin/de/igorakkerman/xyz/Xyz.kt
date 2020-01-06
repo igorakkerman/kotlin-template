@@ -2,7 +2,7 @@ package de.igorakkerman.xyz
 
 class Xyz {
 
-    fun solution(A: IntArray): Int {
+    fun process(input: IntArray): Int {
         return 0
     }
 }

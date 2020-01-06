@@ -10,19 +10,19 @@ internal class XyzTest {
 
     @Test
     internal fun empty() {
-        assertThat(kata.solution(IntArray(0)))
+        assertThat(kata.process(IntArray(0)))
                 .isEqualTo(0)
     }
 
     @Test
     internal fun `single char`() {
-        assertThat(kata.solution(intArrayOf(1)))
+        assertThat(kata.process(intArrayOf(1)))
                 .isEqualTo(0)
     }
 
     @Test
     internal fun `sequence of numbers`() {
-        assertThat(kata.solution(intArrayOf(1, 2, 3, 4, 5)))
+        assertThat(kata.process(intArrayOf(1, 2, 3, 4, 5)))
                 .isEqualTo(0)
     }
 }
