@@ -1,7 +1,6 @@
 package de.igorakkerman.xyz
 
-import ch.tutteli.atrium.api.fluent.en_GB.toBe
-import ch.tutteli.atrium.api.verbs.expect
+import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 
 internal class XyzTest {
@@ -10,19 +9,16 @@ internal class XyzTest {
 
     @Test
     internal fun empty() {
-        expect(xyz.process(IntArray(0)))
-                .toBe(0)
+        xyz.process(IntArray(0)) shouldBe 0
     }
 
     @Test
     internal fun `single char`() {
-        expect(xyz.process(intArrayOf(1)))
-                .toBe(0)
+        xyz.process(intArrayOf(1)) shouldBe 0
     }
 
     @Test
     internal fun `sequence of numbers`() {
-        expect(xyz.process(intArrayOf(1, 2, 3, 4, 5)))
-                .toBe(0)
+        xyz.process(intArrayOf(1, 2, 3, 4, 5)) shouldBe 0
     }
 }
